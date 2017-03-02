@@ -5,18 +5,18 @@ steps:
     type: build
     image_name: markfirmware/ultibo-docker2-x64
     dockerfile: ultibo-docker2-x64.dockerfile
-  Building_arm7hf:
+  Building_armv7hf:
     title: Building x64 Docker Image
     type: build
-    image_name: markfirmware/ultibo-docker2-arm7hf
-    dockerfile: ultibo-docker2-arm7hf.dockerfile
+    image_name: markfirmware/ultibo-docker2-armv7hf
+    dockerfile: ultibo-docker2-armv7hf.dockerfile
   Pushing_x64:
     title: Pushing x64 to Docker Registry
     type: push
     candidate: '${{Building_x64}}'
     tag: latest
-  Pushing_arm7hf:
-    title: Pushing arm7hf to Docker Registry
+  Pushing_armv7hf:
+    title: Pushing armv7hf to Docker Registry
     type: push
-    candidate: '${{Building_arm7hf}}'
+    candidate: '${{Building_armv7hf}}'
     tag: latest
