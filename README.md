@@ -4,8 +4,8 @@
 
 Edition|Build|Size|Version|Stars|Pulls|Docker Hub
 ---|---|---|---|---|---|---
-x86-64| | | | [![Docker Stars](https://img.shields.io/docker/stars/markfirmware/ultibo-docker2-x64.svg?style=flat-square)](https://hub.docker.com/r/markfirmware/ultibo-docker2-x64/) | [![Docker Pulls](https://img.shields.io/docker/pulls/markfirmware/ultibo-docker2-x64.svg?style=flat-square)](https://hub.docker.com/r/markfirmware/ultibo-docker2-x64/) | [x64 image](https://hub.docker.com/r/markfirmware/ultibo-docker2-x64/)
-arm7hf| | | | [![Docker Stars](https://img.shields.io/docker/stars/markfirmware/ultibo-docker2-arm7hf.svg?style=flat-square)](https://hub.docker.com/r/markfirmware/ultibo-docker2-arm7hf/) | [![Docker Pulls](https://img.shields.io/docker/pulls/markfirmware/ultibo-docker2-arm7hf.svg?style=flat-square)](https://hub.docker.com/r/markfirmware/ultibo-docker2-arm7hf/) | [arm7hf image](https://hub.docker.com/r/markfirmware/ultibo-docker2-arm7hf/)
+x86-64| | | | [![Docker Stars](https://img.shields.io/docker/stars/markfirmware/ultibo-docker2-x64.svg?style=flat-square)](https://hub.docker.com/r/markfirmware/ultibo-docker2-x64/) | [![Docker Pulls](https://img.shields.io/docker/pulls/markfirmware/ultibo-docker2-x64.svg?style=flat-square)](https://hub.docker.com/r/markfirmware/ultibo-docker2-x64/) | [x86-64 Image](https://hub.docker.com/r/markfirmware/ultibo-docker2-x64/)
+armv7hf| | | | [![Docker Stars](https://img.shields.io/docker/stars/markfirmware/ultibo-docker2-armv7hf.svg?style=flat-square)](https://hub.docker.com/r/markfirmware/ultibo-docker2-armv7hf/) | [![Docker Pulls](https://img.shields.io/docker/pulls/markfirmware/ultibo-docker2-armv7hf.svg?style=flat-square)](https://hub.docker.com/r/markfirmware/ultibo-docker2-armv7hf/) | [armv7hf Image](https://hub.docker.com/r/markfirmware/ultibo-docker2-armv7hf/)
 
 ## Road Map
 
