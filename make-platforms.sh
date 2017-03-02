@@ -17,7 +17,7 @@ function makecfg {
 -Fu$ULTIBODIR/units/$ARMVFOLDER-ultibo/rtl
 -Fu$ULTIBODIR/units/$ARMVFOLDER-ultibo/packages
 -Fl$ULTIBODIR/units/$ARMVFOLDER-ultibo/lib
--XParm-none-eabi-
+$EXTRACFGOPTIONS
 __EOF__
 }
 
@@ -27,7 +27,7 @@ function runmake {
         CROSSOPT="-Cp$ARMV -Cf$VFPV -CIARM -CaEABIHF -OoFASTMATH $EXTRACROSSOPT" \
         FPCFPMAKE=$FPCEXE \
         FPC=$FPCEXE \
-        BINUTILSPREFIX=arm-none-eabi-
+        $EXTRAMAKEOPTIONS
 }
 
 function makeplatform {
@@ -57,6 +57,14 @@ function makeplatform {
 
 ULTIBODIR=$HOME/ultibo/core/fpc
 FPCEXE=$ULTIBODIR/bin/fpc
+
+uname -m | grep -iq '^arm.*'
+if [[ $? == 0 ]]
+then
+    EXTRAMAKEOPTIONS=BINUTILSPREFIX=arm-none-eabi-
+    EXTRACFGOPTIONS=-XParm-none-eabi-
+fi
+
 makecfg rpi.cfg armv6 VFPV2 "Raspberry Pi (A/B/A+/B+/Zero)" && \
 makecfg rpi2.cfg armv7 VFPV3 "Raspberry Pi 2B" && \
 makecfg rpi3.cfg armv7 VFPV3 "Raspberry Pi 3B" && \
