@@ -2,7 +2,7 @@ FROM node
 
 WORKDIR /root
 
-RUN node -v &&
+RUN node -v && \
     npm install -g elm
 
 RUN apt-get update && apt-get install -y wget binutils gcc git && \
