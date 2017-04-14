@@ -3,7 +3,7 @@ steps:
   Building_x64:
     title: Building x64 Docker Image
     type: build
-    image_name: markfirmware/ultibo-docker2-x64-1.3.245-rc1
+    image_name: markfirmware/ultibo-docker2-x64-1.3.245-rc2
     dockerfile: ultibo-docker2-x64.dockerfile
 # Building_armv7hf:
 #   title: Building x64 Docker Image
